@@ -1,5 +1,5 @@
-import { FeaturedItem } from '@/components/featured-items'
-import { ListItem } from '@/components/items-list'
+import type { FeaturedItem } from '@/components/featured-items'
+import type { ListItem } from '@/components/items-list'
 
 // Sample data - replace with your actual content
 export const featuredServices: FeaturedItem[] = [
