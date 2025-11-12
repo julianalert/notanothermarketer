@@ -12,10 +12,7 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
-  { href: '/services', label: 'Services' },
-  { href: '/login', label: 'Login' },
+  { href: '#templates', label: 'Templates' },
 ]
 
 function DesktopNav() {
@@ -23,12 +20,19 @@ function DesktopNav() {
     <nav className="relative hidden lg:flex">
       {links.map(({ href, label }) => (
         <PlusGridItem key={href} className="relative flex">
-          <Link
+          <a
             href={href}
-            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5 cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault()
+              const element = document.querySelector('#templates')
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
           >
             {label}
-          </Link>
+          </a>
         </PlusGridItem>
       ))}
     </nav>
@@ -61,9 +65,19 @@ function MobileNav() {
             }}
             key={href}
           >
-            <Link href={href} className="text-base font-medium text-gray-950">
+            <a 
+              href={href} 
+              className="text-base font-medium text-gray-950 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.querySelector('#templates')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
+            >
               {label}
-            </Link>
+            </a>
           </motion.div>
         ))}
       </div>

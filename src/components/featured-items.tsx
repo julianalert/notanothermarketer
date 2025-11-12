@@ -36,8 +36,7 @@ export function FeaturedItems({
   return (
     <div className={className}>
       <Container>
-        <h2 className="text-2xl font-medium tracking-tight">{title}</h2>
-        <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {items.map((item) => (
             <div
               key={item.id}

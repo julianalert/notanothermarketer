@@ -53,26 +53,24 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Templates</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          <SitemapLink href="/pricing">SEO/LEO Machine</SitemapLink>
+          <SitemapLink href="#">Lead Gen System</SitemapLink>
+          <SitemapLink href="#">Popup Tool</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>Not Another Marketer</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
           <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="/company">About</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
+          <SitemapLink href="#">Contact</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
@@ -117,6 +115,7 @@ function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
 function SocialLinks() {
   return (
     <>
+      {/* Facebook social media link with icon - opens in new tab 
       <Link
         href="https://facebook.com"
         target="_blank"
@@ -124,23 +123,23 @@ function SocialLinks() {
         className="text-gray-950 data-hover:text-gray-950/75"
       >
         <SocialIconFacebook className="size-4" />
-      </Link>
+      </Link>*/}
       <Link
-        href="https://x.com"
+        href="https://x.com/notanothermrktr"
         target="_blank"
-        aria-label="Visit us on X"
+        aria-label="Not Another Marketer on X"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
         <SocialIconX className="size-4" />
       </Link>
-      <Link
+       {/* <Link
         href="https://linkedin.com"
         target="_blank"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
         <SocialIconLinkedIn className="size-4" />
-      </Link>
+      </Link>*/}
     </>
   )
 }
@@ -148,7 +147,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Not Another Marketer Inc.
     </div>
   )
 }

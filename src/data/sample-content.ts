@@ -5,7 +5,7 @@ import type { ListItem } from '@/components/items-list'
 export const featuredServices: FeaturedItem[] = [
   {
     id: '1',
-    title: 'Marketing Strategy Consulting',
+    title: 'Lead Gen Automation',
     description: 'Comprehensive marketing strategy development tailored to your business goals and target audience.',
     image: {
       src: '/screenshots/engagement.png',
@@ -20,7 +20,7 @@ export const featuredServices: FeaturedItem[] = [
   },
   {
     id: '2',
-    title: 'Content Creation & Management',
+    title: 'SEO & Content Growth',
     description: 'End-to-end content creation, from blog posts to social media campaigns that engage your audience.',
     image: {
       src: '/screenshots/profile.png',
@@ -34,7 +34,7 @@ export const featuredServices: FeaturedItem[] = [
   },
   {
     id: '3',
-    title: 'Performance Analytics',
+    title: 'Conversion Optimization Toolkit',
     description: 'Data-driven insights and reporting to measure and optimize your marketing performance.',
     image: {
       src: '/screenshots/competitors.png',
